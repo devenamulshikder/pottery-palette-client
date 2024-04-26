@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [theme, setTheme] = useState("light");
@@ -17,9 +18,15 @@ const Navbar = () => {
 
   const navLink = (
     <>
-      <li>
+      <NavLink
+        className={({ isActive }) =>
+          isActive
+            ? "btn btn-outline btn-success font-bold text-lg"
+            : "font-bold"
+        }
+      >
         <a>Home</a>
-      </li>
+      </NavLink>
       <li>
         <a>Item 3</a>
       </li>
@@ -51,17 +58,17 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-           {navLink}
+              {navLink}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl font-bold">Pottery Palette</a>
+          <a className="btn btn-ghost text-xl font-bold"><span className="text-[#00a973]">Pottery</span> Palette</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-          {navLink}
-          </ul>
+          <ul className="menu menu-horizontal px-1">{navLink}</ul>
         </div>
-        <div className="navbar-end">{/* <a classNameName="btn">Button</a> */}</div>
+        <div className="navbar-end">
+          {/* <a classNameName="btn">Button</a> */}
+        </div>
         <label className="cursor-pointer grid place-items-center">
           <input
             onChange={handleToggle}
