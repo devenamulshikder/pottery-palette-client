@@ -1,7 +1,24 @@
-import { useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { useContext, useEffect, useState } from "react";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../provider/Authprovider";
+import toast from "react-hot-toast";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const navigate = useNavigate();
+
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {
+        toast.success("Log out successfully");
+        navigate("/");
+      })
+      .catch((error) => {
+        toast.error(error);
+      });
+  };
+
   const [theme, setTheme] = useState("light");
   useEffect(() => {
     localStorage.setItem("theme", theme);
@@ -18,7 +35,8 @@ const Navbar = () => {
 
   const navLink = (
     <>
-      <NavLink to='/'
+      <NavLink
+        to="/"
         className={({ isActive }) =>
           isActive
             ? "btn btn-outline btn-success font-bold text-lg"
@@ -27,7 +45,8 @@ const Navbar = () => {
       >
         <a>Home</a>
       </NavLink>
-      <NavLink to='/allart'
+      <NavLink
+        to="/allart"
         className={({ isActive }) =>
           isActive
             ? "btn btn-outline btn-success font-bold text-lg"
@@ -36,7 +55,8 @@ const Navbar = () => {
       >
         <a>All Art & craft Items</a>
       </NavLink>
-      <NavLink to='/addcraft'
+      <NavLink
+        to="/addcraft"
         className={({ isActive }) =>
           isActive
             ? "btn btn-outline btn-success font-bold text-lg"
@@ -45,7 +65,6 @@ const Navbar = () => {
       >
         <a>Add Craft Item</a>
       </NavLink>
-
     </>
   );
 
@@ -77,15 +96,47 @@ const Navbar = () => {
               {navLink}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl font-bold"><span className="text-[#00a973]">Pottery</span> Palette</a>
+          <a className="btn btn-ghost text-xl font-bold">
+            <span className="text-[#00a973]">Pottery</span> Palette
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="space-x-3">{navLink}</ul>
         </div>
         <div className="navbar-end mr-1 lg:mr-4 text-[#00a973] lg:text-xl font-semibold">
-          {/* <a classNameName="btn">Button</a> */}
-          <Link className="mr-4" to='/login'>Login</Link>
-          <Link to='/register'>Register</Link>
+          {user ? (
+            <div>
+              <div className="dropdown dropdown-end">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="btn btn-ghost btn-circle avatar"
+                >
+                  <div className="w-10 rounded-full">
+                    <img
+                      alt="Tailwind CSS Navbar component"
+                      src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                    />
+                  </div>
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="mt-3 z-[20] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+                >
+                  <li>
+                    <button onClick={handleLogOut}>Logout</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          ) : (
+            <div>
+              <Link className="mr-4" to="/login">
+                Login
+              </Link>
+              <Link to="/register">Register</Link>
+            </div>
+          )}
         </div>
         <label className="cursor-pointer grid place-items-center">
           <input
