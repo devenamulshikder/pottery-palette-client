@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [theme, setTheme] = useState("light");
@@ -18,7 +18,7 @@ const Navbar = () => {
 
   const navLink = (
     <>
-      <NavLink
+      <NavLink to='/'
         className={({ isActive }) =>
           isActive
             ? "btn btn-outline btn-success font-bold text-lg"
@@ -27,9 +27,25 @@ const Navbar = () => {
       >
         <a>Home</a>
       </NavLink>
-      <li>
-        <a>Item 3</a>
-      </li>
+      <NavLink to='/allart'
+        className={({ isActive }) =>
+          isActive
+            ? "btn btn-outline btn-success font-bold text-lg"
+            : "font-bold"
+        }
+      >
+        <a>All Art & craft Items</a>
+      </NavLink>
+      <NavLink to='/addcraft'
+        className={({ isActive }) =>
+          isActive
+            ? "btn btn-outline btn-success font-bold text-lg"
+            : "font-bold"
+        }
+      >
+        <a>Add Craft Item</a>
+      </NavLink>
+
     </>
   );
 
@@ -56,7 +72,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[10] p-2 shadow bg-base-100 rounded-box w-52"
             >
               {navLink}
             </ul>
@@ -64,10 +80,12 @@ const Navbar = () => {
           <a className="btn btn-ghost text-xl font-bold"><span className="text-[#00a973]">Pottery</span> Palette</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navLink}</ul>
+          <ul className="space-x-3">{navLink}</ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end mr-1 lg:mr-4 text-[#00a973] lg:text-xl font-semibold">
           {/* <a classNameName="btn">Button</a> */}
+          <Link className="mr-4" to='/login'>Login</Link>
+          <Link to='/register'>Register</Link>
         </div>
         <label className="cursor-pointer grid place-items-center">
           <input
