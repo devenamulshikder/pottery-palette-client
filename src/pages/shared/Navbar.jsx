@@ -120,23 +120,25 @@ const Navbar = () => {
                 <div
                   tabIndex={0}
                   role="button"
-                  className="btn btn-ghost btn-circle avatar"
+                  className="btn btn-ghost btn-circle avatar relative"
                 >
                   <div className="w-10 rounded-full">
                     <img alt="user" src={user.photoURL} />
                   </div>
+                  <span className="hidden absolute top-full left-1/2 -translate-x-1/2 text-sm bg-base-100 p-1 rounded">
+                    {user.displayName}
+                  </span>
                 </div>
                 <ul
                   tabIndex={0}
                   className="mt-3 z-[20] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
                 >
-                   <li>
+                  <li>
                     <h1>{user.displayName}</h1>
                   </li>
                   <li>
                     <button onClick={handleLogOut}>Logout</button>
                   </li>
-                 
                 </ul>
               </div>
             </div>
