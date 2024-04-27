@@ -1,6 +1,6 @@
 const OurProducts = () => {
   return (
-    <div className="max-w-7xl mx-auto">
+    <div>
       <p className="text-[#00a973] font-semibold mt-8 md:mt-12 lg:mt-16 text-center">
         OUR PRODUCTS
       </p>
