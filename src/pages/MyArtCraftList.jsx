@@ -1,16 +1,17 @@
 import { Helmet } from "react-helmet-async";
 
-const AddCraftItem = () => {
+
+const MyArtCraftList = () => {
     return (
         <div>
             <Helmet>
                 <title>
-                Pottery ||  AddCraftItem
+                Pottery || My Art&Craft List
                 </title>
             </Helmet>
-            add craft
+            My Art&Craft List
         </div>
     );
 };
 
-export default AddCraftItem;
+export default MyArtCraftList;

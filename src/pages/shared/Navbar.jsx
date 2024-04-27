@@ -39,31 +39,41 @@ const Navbar = () => {
         to="/"
         className={({ isActive }) =>
           isActive
-            ? "btn btn-outline btn-success font-bold text-lg"
+            ? "btn btn-outline btn-success font-bold text-sm lg:text-lg"
             : "font-bold"
         }
       >
-        <a>Home</a>
+        Home
       </NavLink>
       <NavLink
         to="/allart"
         className={({ isActive }) =>
           isActive
-            ? "btn btn-outline btn-success font-bold text-lg"
+            ? "btn btn-outline btn-success font-bold  text-sm lg:text-lg"
             : "font-bold"
         }
       >
-        <a>All Art & craft Items</a>
+        All Art & craft Items
       </NavLink>
       <NavLink
         to="/addcraft"
         className={({ isActive }) =>
           isActive
-            ? "btn btn-outline btn-success font-bold text-lg"
+            ? "btn btn-outline btn-success font-bold  text-sm lg:text-lg"
             : "font-bold"
         }
       >
-        <a>Add Craft Item</a>
+        Add Craft Item
+      </NavLink>
+      <NavLink
+        to="/myartcraftlist"
+        className={({ isActive }) =>
+          isActive
+            ? "btn btn-outline btn-success font-bold  text-sm lg:text-lg"
+            : "font-bold"
+        }
+      >
+        My Art&Craft List
       </NavLink>
     </>
   );
@@ -96,7 +106,7 @@ const Navbar = () => {
               {navLink}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl font-bold">
+          <a className="btn btn-ghost text-xl lg:text-2xl font-bold">
             <span className="text-[#00a973]">Pottery</span> Palette
           </a>
         </div>
@@ -113,19 +123,20 @@ const Navbar = () => {
                   className="btn btn-ghost btn-circle avatar"
                 >
                   <div className="w-10 rounded-full">
-                    <img
-                      alt="Tailwind CSS Navbar component"
-                      src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-                    />
+                    <img alt="user" src={user.photoURL} />
                   </div>
                 </div>
                 <ul
                   tabIndex={0}
                   className="mt-3 z-[20] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
                 >
+                   <li>
+                    <h1>{user.displayName}</h1>
+                  </li>
                   <li>
                     <button onClick={handleLogOut}>Logout</button>
                   </li>
+                 
                 </ul>
               </div>
             </div>

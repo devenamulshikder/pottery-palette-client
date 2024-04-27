@@ -7,6 +7,7 @@ import Register from "../pages/Register";
 import AllartAndCraft from "../pages/AllartAndCraft";
 import AddCraftItem from "../pages/AddCraftItem";
 import PrivetRout from "./PrivateRoute";
+import MyArtCraftList from "../pages/MyArtCraftList";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,14 @@ const router = createBrowserRouter([
         element: (
           <PrivetRout>
             <AddCraftItem />
+          </PrivetRout>
+        ),
+      },
+      {
+        path: "/myartcraftlist",
+        element: (
+          <PrivetRout>
+            <MyArtCraftList />
           </PrivetRout>
         ),
       },

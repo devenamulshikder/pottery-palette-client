@@ -5,6 +5,7 @@ import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper/modules";
 
 import {} from "swiper/modules";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   return (
@@ -18,6 +19,9 @@ const Home = () => {
         loop={true}
       >
         <SwiperSlide>
+          <Helmet>
+            <title>Pottery || Home</title>
+          </Helmet>
           <div className="p-6 h-[40rem] w-full">
             <div className="-m-6 max-h-[768px] w-[calc(100%+0px)]">
               <div className="mt-16">

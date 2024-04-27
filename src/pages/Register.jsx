@@ -47,7 +47,7 @@ const Register = () => {
       className="w-full max-w-md p-8 space-y-3 rounded-xl border-2 border-dotted bg-white   font-sans mx-auto my-5 lg:my-14"
     >
       <Helmet>
-        <title>Dream sites || Register</title>
+        <title>Pottery || Register</title>
       </Helmet>
       <h1 className="text-3xl font-bold text-center text-[#38b469]">
         Register
