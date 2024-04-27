@@ -1,7 +1,7 @@
 const OurProducts = () => {
   return (
     <div>
-      <p className="text-[#00a973] font-semibold mt-8 md:mt-12 lg:mt-16 text-center">
+      <p className="text-[#38b469] font-semibold mt-8 md:mt-12 lg:mt-16 text-center">
         OUR PRODUCTS
       </p>
 

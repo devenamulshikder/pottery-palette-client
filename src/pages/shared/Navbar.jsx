@@ -107,13 +107,13 @@ const Navbar = () => {
             </ul>
           </div>
           <a className="btn btn-ghost text-xl lg:text-2xl font-bold">
-            <span className="text-[#00a973]">Pottery</span> Palette
+            <span className="text-[#38b469]">Pottery</span> Palette
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="space-x-3">{navLink}</ul>
         </div>
-        <div className="navbar-end mr-1 lg:mr-4 text-[#00a973] lg:text-xl font-semibold">
+        <div className="navbar-end mr-1 lg:mr-4 text-[#38b469] lg:text-xl font-semibold">
           {user ? (
             <div>
               <div className="dropdown dropdown-end">
