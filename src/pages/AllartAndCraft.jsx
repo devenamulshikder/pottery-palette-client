@@ -3,7 +3,6 @@ import { Link, useLoaderData } from "react-router-dom";
 
 const AllartAndCraft = () => {
   const allArtLoader = useLoaderData();
-  console.log(allArtLoader);
   return (
     <div className="max-w-7xl mx-auto mt-16">
       <Helmet>
@@ -32,7 +31,7 @@ const AllartAndCraft = () => {
                 <td>{singleArt?.rating}</td>
                 <td>{singleArt.stock}</td>
                 <td>
-                  <Link className='btn'>Details</Link>
+                  <Link to={`/pottery/${singleArt._id}`} className='btn'>Details</Link>
                 </td>
               </tr>
             ))}

@@ -8,6 +8,7 @@ import AllartAndCraft from "../pages/AllartAndCraft";
 import AddCraftItem from "../pages/AddCraftItem";
 import PrivetRout from "./PrivateRoute";
 import MyArtCraftList from "../pages/MyArtCraftList";
+import ViewDetails from "../components/ViewDetails";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        loader: () => fetch("http://localhost:5000/pottery"),
       },
       {
         path: "/login",
@@ -30,7 +32,7 @@ const router = createBrowserRouter([
       {
         path: "/allart",
         element: <AllartAndCraft />,
-        loader: () => fetch("http://localhost:5000/pottery")
+        loader: () => fetch("http://localhost:5000/pottery"),
       },
       {
         path: "/addcraft",
@@ -47,6 +49,14 @@ const router = createBrowserRouter([
             <MyArtCraftList />
           </PrivetRout>
         ),
+      },
+      {
+        path: "/pottery/:id",
+        element: <PrivetRout>
+          <ViewDetails></ViewDetails>
+        </PrivetRout>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/pottery/${params.id}`),
       },
     ],
   },

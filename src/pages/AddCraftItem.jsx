@@ -21,7 +21,7 @@ const AddCraftItem = () => {
 
     const stock = form.stock.value;
     const processing_time = form.processing_time.value;
-    const description = form.processing_time.value;
+    const description = form.description.value;
 
     const newCraft = {
       userName,
@@ -71,6 +71,7 @@ const AddCraftItem = () => {
               type="text"
               name="item_name"
               placeholder="Item Name"
+              required
               className="input input-bordered w-full"
             />
           </div>
@@ -80,6 +81,7 @@ const AddCraftItem = () => {
             <select
               type="text"
               name="subcategory_name"
+              required
               className=" p-3 rounded-lg border w-full"
             >
               <option>Clay-made pottery</option>
@@ -101,6 +103,7 @@ const AddCraftItem = () => {
               type="text"
               name="price"
               placeholder="Enter Price"
+              required
               className="input input-bordered w-full"
             />
           </div>
@@ -111,6 +114,7 @@ const AddCraftItem = () => {
               type="text"
               name="rating"
               placeholder="Enter Ratings"
+              required
               className="input input-bordered w-full"
             />
           </div>
@@ -122,6 +126,7 @@ const AddCraftItem = () => {
             <select
               type="text"
               name="customizable"
+              required
               className="p-3 border rounded-lg w-full"
             >
               <option>Yes</option>
@@ -135,6 +140,7 @@ const AddCraftItem = () => {
               type="text"
               name="image"
               placeholder="Enter Image_URL"
+              required
               className="input input-bordered w-full"
             />
           </div>
@@ -146,6 +152,7 @@ const AddCraftItem = () => {
             <select
               type="text"
               name="stock"
+              required
               className="p-3 border rounded-lg w-full"
             >
               <option>In stock</option>
@@ -157,6 +164,7 @@ const AddCraftItem = () => {
             <input
               type="text"
               name="processing_time"
+              required
               placeholder="Enter processing time (hour)"
               className="input input-bordered w-full"
             />
@@ -168,6 +176,7 @@ const AddCraftItem = () => {
           <textarea
             className="textarea textarea-bordered w-full"
             name="description"
+            required
             placeholder="Sort Description"
           ></textarea>
         </div>
