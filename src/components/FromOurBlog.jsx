@@ -9,7 +9,7 @@ const FromOurBlog = () => {
         Latest Article
       </h1>
       <div className="lg:grid lg:grid-cols-12 grid gap-8">
-        <div className="relative col-span-7">
+        <div className="relative lg:col-span-7">
           <img
             src="https://i.postimg.cc/63BBpddw/ceramic-mugs-on-shelf.jpg"
             alt=""
@@ -21,7 +21,7 @@ const FromOurBlog = () => {
         </div>
 
 
-        <div className="lg:col-span-1 ">
+        <div  className="lg:col-span-1 ">
           
           <div className='flex gap-5 md:w-[200px] lg:w-[150px] mb-7'>
             <img
@@ -72,11 +72,6 @@ const FromOurBlog = () => {
             <p className="text-[#38b469] lg:w-[300px]">August 28, 2022 No Comments</p>
            </div>
           </div>
-
-
-         
-
-
 
         </div>
       </div>
