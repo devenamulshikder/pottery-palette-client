@@ -6,7 +6,6 @@ import OurProducts from "../components/OurProducts";
 
 const Home = () => {
   const allData = useLoaderData();
-  console.log(allData);
   return (
     <div>
       <Banner></Banner>
