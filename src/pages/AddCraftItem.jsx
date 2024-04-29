@@ -10,7 +10,7 @@ const AddCraftItem = () => {
     const userName = user.displayName;
     const userEmail = user.email;
 
-    const item_name = form.subcategory_name.value;
+    const item_name = form.item_name.value;
     const subcategory_name = form.subcategory_name.value;
 
     const price = form.price.value;
@@ -36,7 +36,6 @@ const AddCraftItem = () => {
       processing_time,
       description
     };
-    console.log(newCraft);
 
     fetch("http://localhost:5000/pottery", {
       method: "POST",
@@ -47,7 +46,6 @@ const AddCraftItem = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         if (data.insertedId) {
           form.reset("");
           toast.success("Successfully Craft Added!");
@@ -61,9 +59,6 @@ const AddCraftItem = () => {
         Add a Craft Item
       </h1>
       <form onSubmit={handleAddCraftItem}>
-        
-
-
         <div className="md:flex gap-5 mb-6">
           <div className="md:w-1/2">
             <label className="label"> Item Name</label>
@@ -93,9 +88,6 @@ const AddCraftItem = () => {
             </select>
           </div>
         </div>
-
-
-
         <div className="md:flex gap-5 mb-6">
           <div className="md:w-1/2">
             <label className="label">Price</label>
@@ -182,7 +174,7 @@ const AddCraftItem = () => {
         </div>
         <input
           type="submit"
-          value="Add Craft"
+          value="Add Craft Item"
           className="btn btn-block bg-[#38b469]"
         />
         {/* <button className="btn btn-error w-full">Add Coffee</button> */}

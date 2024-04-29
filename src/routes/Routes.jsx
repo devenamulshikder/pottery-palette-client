@@ -9,6 +9,7 @@ import AddCraftItem from "../pages/AddCraftItem";
 import PrivetRout from "./PrivateRoute";
 import MyArtCraftList from "../pages/MyArtCraftList";
 import ViewDetails from "../components/ViewDetails";
+import UpdateCraft from "../components/UpdateCraft";
 
 const router = createBrowserRouter([
   {
@@ -52,11 +53,22 @@ const router = createBrowserRouter([
       },
       {
         path: "/pottery/:id",
-        element: <PrivetRout>
-          <ViewDetails></ViewDetails>
-        </PrivetRout>,
+        element: (
+          <PrivetRout>
+            <ViewDetails></ViewDetails>
+          </PrivetRout>
+        ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/pottery/${params.id}`),
+      },
+      {
+        path: "/updateCraft/:id",
+        element: (
+          <PrivetRout>
+            <UpdateCraft></UpdateCraft>
+          </PrivetRout>
+        ),
+        loader:({params})=>fetch(`http://localhost:5000/pottery/${params.id}`)
       },
     ],
   },

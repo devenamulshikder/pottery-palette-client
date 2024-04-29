@@ -19,8 +19,6 @@ const FromOurBlog = () => {
             <br /> castle"
           </h1>
         </div>
-
-
         <div  className="lg:col-span-1 ">
           
           <div className='flex gap-5 md:w-[200px] lg:w-[150px] mb-7'>
@@ -33,9 +31,6 @@ const FromOurBlog = () => {
             <p className="text-[#38b469] lg:w-[300px]">August 28, 2022 No Comments</p>
            </div>
           </div>
-
-
-
           <div className='flex gap-5 md:w-[200px] lg:w-[150px] mb-7'>
             <img
               src="https://i.postimg.cc/76r8JW3h/sculptor-working-in-the-ceramic-studio.jpg"
@@ -46,9 +41,6 @@ const FromOurBlog = () => {
             <p className="text-[#38b469] lg:w-[300px]">August 28, 2022 No Comments</p>
            </div>
           </div>
-
-
-
           <div className='flex gap-5 md:w-[200px] lg:w-[150px] mb-7'>
             <img
               src="https://i.postimg.cc/g25PmJrv/8-ldgq801ce.jpg"
@@ -59,9 +51,6 @@ const FromOurBlog = () => {
             <p className="text-[#38b469] lg:w-[300px]">August 28, 2022 No Comments</p>
            </div>
           </div>
-
-
-
           <div className='flex gap-5 md:w-[200px] lg:w-[150px] mb-7'>
             <img
               src="https://i.postimg.cc/4xhfL4fC/a-potter-handling-a-wet-clay-pot-and-marking-a-design-on-the-outside-preparing-it-for-kiln-firing.jpg"

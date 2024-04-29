@@ -5,6 +5,7 @@ import { FaRegStar } from "react-icons/fa";
 import { FaDeleteLeft } from "react-icons/fa6";
 import { MdOutlineBrowserUpdated } from "react-icons/md";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 
 const MyArtCraftList = () => {
   const { user } = useContext(AuthContext);
@@ -123,9 +124,12 @@ const MyArtCraftList = () => {
                 </div>
                 <p>Description: {item.description}</p>
                 <div className="card-actions justify-end">
-                  <div className=" btn bg-[#38b469] ">
+                  <Link to={`/updateCraft/${item._id}`}>
+                  
+                  <button className=" btn bg-[#38b469] ">
                     Update <MdOutlineBrowserUpdated />
-                  </div>
+                  </button>
+                  </Link>
                   <div
                     onClick={() => handleDelete(item._id)}
                     className="btn bg-[#38b469] "
