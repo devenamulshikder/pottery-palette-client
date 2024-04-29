@@ -20,7 +20,7 @@ const ViewDetails = () => {
   return (
     <>
       <div className="py-5 md:py-10 bg-white text-black">
-            <div className="max-w-7xl mx-auto lg:min-h-[calc(100vh-450px)]">
+            <div className="max-w-7xl mx-auto lg:min-h-[calc(100vh-520px)]">
                 <div className="flex flex-col lg:flex-row justify-even items-center gap-5 sm:gap-8 lg:gap-20 px-5">
                     <div className=" p-5 shadow-sm rounded-lg">
                         <img className="w-[350px] h-[350px]" src={image} alt="" />

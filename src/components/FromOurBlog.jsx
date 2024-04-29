@@ -14,54 +14,61 @@ const FromOurBlog = () => {
             src="https://i.postimg.cc/63BBpddw/ceramic-mugs-on-shelf.jpg"
             alt=""
           />
-          <h1 className="absolute top-20 left-5 md:top-40 md:left-40 lg:top-40 lg:left-20 font-semibold text-black text-2xl md:text-3xl lg:text-5xl text-center">
-            "A field of clay touched by the <br /> genius of man becomes a{" "}
-            <br /> castle"
-          </h1>
         </div>
-        <div  className="lg:col-span-1 ">
-          
-          <div className='flex gap-5 md:w-[200px] lg:w-[150px] mb-7'>
+        <div className="lg:col-span-1">
+          <div className="flex flex-col md:flex-row lg:flex-row gap-5 md:w-[200px] lg:w-[150px] mb-7">
             <img
               src="https://i.postimg.cc/1zq1tQNb/creative-flat-lay-design-of-stylish-beige-architect-moodboard-composition.jpg"
               alt=""
             />
-           <div>
-           <h1 className="text-xl inter w-[200px] md:w-[300px] lg:w-[300px] ">The Contemporary Ceramic Art</h1>
-            <p className="text-[#38b469] lg:w-[300px]">August 28, 2022 No Comments</p>
-           </div>
+            <div>
+              <h1 className="text-xl inter w-full md:w-[300px] lg:w-[300px] ">
+                The Contemporary Ceramic Art
+              </h1>
+              <p className="text-[#38b469] lg:w-[300px]">
+                August 28, 2022 No Comments
+              </p>
+            </div>
           </div>
-          <div className='flex gap-5 md:w-[200px] lg:w-[150px] mb-7'>
+          <div className="flex flex-col md:flex-row lg:flex-row gap-5 md:w-[200px] lg:w-[150px] mb-7">
             <img
               src="https://i.postimg.cc/76r8JW3h/sculptor-working-in-the-ceramic-studio.jpg"
               alt=""
             />
-           <div>
-           <h1 className="text-xl inter w-[200px] md:w-[300px] lg:w-[300px] ">Why Makers Make – Function, Form and Fine Art</h1>
-            <p className="text-[#38b469] lg:w-[300px]">August 28, 2022 No Comments</p>
-           </div>
+            <div>
+              <h1 className="text-xl inter w-full md:w-[300px] lg:w-[300px] ">
+                Why Makers Make – Function, Form and Fine Art
+              </h1>
+              <p className="text-[#38b469] lg:w-[300px]">
+                August 28, 2022 No Comments
+              </p>
+            </div>
           </div>
-          <div className='flex gap-5 md:w-[200px] lg:w-[150px] mb-7'>
-            <img
-              src="https://i.postimg.cc/g25PmJrv/8-ldgq801ce.jpg"
-              alt=""
-            />
-           <div>
-           <h1 className="text-xl inter w-[200px] md:w-[300px] lg:w-[300px] ">Making Your Ceramics Look Great In Digital Photographs</h1>
-            <p className="text-[#38b469] lg:w-[300px]">August 28, 2022 No Comments</p>
-           </div>
+          <div className="flex flex-col md:flex-row lg:flex-row gap-5 md:w-[200px] lg:w-[150px] mb-7">
+            <img src="https://i.postimg.cc/g25PmJrv/8-ldgq801ce.jpg" alt="" />
+            <div>
+              <h1 className="text-xl inter w-full md:w-[300px] lg:w-[300px] ">
+                Making Your Ceramics Look Great In Digital Photographs
+              </h1>
+              <p className="text-[#38b469] lg:w-[300px]">
+                August 28, 2022 No Comments
+              </p>
+            </div>
           </div>
-          <div className='flex gap-5 md:w-[200px] lg:w-[150px] mb-7'>
+          <div className="flex flex-col md:flex-row lg:flex-row gap-5 md:w-[200px] lg:w-[150px] mb-7">
             <img
               src="https://i.postimg.cc/4xhfL4fC/a-potter-handling-a-wet-clay-pot-and-marking-a-design-on-the-outside-preparing-it-for-kiln-firing.jpg"
               alt=""
             />
-           <div>
-           <h1 className="text-xl inter w-[200px] md:w-[300px] lg:w-[300px] ">Choosing a Pottery Kiln</h1>
-            <p className="text-[#38b469] lg:w-[300px]">August 28, 2022 No Comments</p>
-           </div>
+            <div>
+              <h1 className="text-xl inter w-full md:w-[300px] lg:w-[300px] ">
+                Choosing a Pottery Kiln
+              </h1>
+              <p className="text-[#38b469] lg:w-[300px]">
+                August 28, 2022 No Comments
+              </p>
+            </div>
           </div>
-
         </div>
       </div>
     </div>

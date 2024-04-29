@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import BestSeller from "../components/BestSeller";
 import FromOurBlog from "../components/FromOurBlog";
 import OurProducts from "../components/OurProducts";
+import Faq from "../components/Faq";
 
 const Home = () => {
   const allData = useLoaderData();
@@ -29,6 +30,7 @@ const Home = () => {
         </div>
 
         <BestSeller></BestSeller>
+        <Faq></Faq>
         <FromOurBlog></FromOurBlog>
       </div>
     </div>
