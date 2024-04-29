@@ -28,8 +28,6 @@ const Banner = () => {
                 <div className="flex flex-col mb-12 overflow-hidden text-gray-700 bg-white shadow-md  bg-clip-border">
                   <div className="absolute h-[38rem] w-full">
                     <img
-                      data-aos="zoom-out"
-                      data-aos-duration="2000"
                       alt="nature"
                       className="h-[38rem] w-full object-cover object-center opacity-80"
                       src="https://i.postimg.cc/RFfW4HQj/8-ldgq801ce.jpg"
@@ -37,8 +35,6 @@ const Banner = () => {
                   </div>
                 </div>
                 <div
-                  data-aos="fade-down"
-                  data-aos-duration="2000"
                   className=" relative "
                 >
                   <h2 className="text-4xl lg:text-6xl ml-10 font-bold inter text-white text-center mt-32">
@@ -66,8 +62,6 @@ const Banner = () => {
                   </div>
                 </div>
                 <div
-                  data-aos="fade-down"
-                  data-aos-duration="2000"
                   className=" relative "
                 >
                   <h2 className="text-4xl lg:text-6xl ml-10 font-bold inter text-white text-center mt-32">
@@ -95,8 +89,6 @@ const Banner = () => {
                   </div>
                 </div>
                 <div
-                  data-aos="fade-down"
-                  data-aos-duration="2000"
                   className=" relative "
                 >
                   <h2 className="text-4xl md:text-5xl lg:text-6xl ml-10 font-bold inter text-white text-center mt-32">

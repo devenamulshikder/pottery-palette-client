@@ -3,8 +3,6 @@ const BestSeller = () => {
     <div className="p-4">
       <div className="flex items-center justify-between mt-8 md:mt-16 lg:mt-20">
         <h1
-          data-aos="fade-left"
-          data-aos-duration="500"
           className="inter text-xl md:text-3xl lg:text-5xl font-semibold"
         >
           Our Best Seller
@@ -63,15 +61,13 @@ const BestSeller = () => {
         </div>
       </div>
 
-      <div className="text-black">
-        <div className="mt-16 empty: bg-no-repeat bg-[url('https://i.postimg.cc/SKMc9M35/light-background-with-ceramic-dishes-beautiful-layout-e1662012818279.jpg')]">
+      <div className="">
+        <div className="mt-16 bg-[url('https://i.postimg.cc/8C58zz5p/pngegg-e1662013227204.png')]">
           <h1 className="text-xl font-semibold p-2 lg:text-5xl inter pt-16 lg:pl-16 w-[40rem]">
             Turning mud into something amazing
           </h1>
           <p className="lg:pl-16 inter lg:w-[40rem] mt-6 p-2">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-            doloribus numquam, modi asperiores natus explicabo sit nemo dolorum
-            tempore dignissimos?
+          Pottery and ceramics have been an important part of human culture for thousands of years. From prehistoric storage jars to tiles on the space shuttles, pottery and ceramics have played a key role in innumerable human endeavors. But how do we define them?
           </p>
           <div className="flex gap-10 items-center p-16">
             <div className="flex flex-col">

@@ -5,8 +5,7 @@ const OurProducts = ({ singleData }) => {
   return (
     <div className="hover:shadow-2xl">
       <div
-        data-aos="fade-up"
-        data-aos-duration="1500"
+        
         className="relative grid h-[30rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700"
       >
         <div
@@ -19,9 +18,11 @@ const OurProducts = ({ singleData }) => {
           <h2 className="mb-6 block font-sans text-2xl font-medium leading-[1.5] tracking-normal text-white antialiased">
             {singleData.item_name}
           </h2>
+          <div className='flex'>
           <h5 className="block mb-4 font-sans text-lg antialiased font-semibold leading-snug tracking-normal text-gray-400">
             {singleData.description}
           </h5>
+          </div>
           <Link to={`/pottery/${singleData._id}`}>
             <button className="border p-2 text-white">View Products</button>
           </Link>

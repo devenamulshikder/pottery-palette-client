@@ -61,8 +61,6 @@ const Login = () => {
   return (
     <div>
       <div
-        data-aos="fade-down"
-        data-aos-duration="1200"
         className="w-full lg:mt-32 mx-auto lg:w-[1000px] shadow-lg bg-white flex group text-gray-600"
       >
         <Helmet>

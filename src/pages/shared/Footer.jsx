@@ -5,7 +5,8 @@ import { TiSocialFacebook, TiSocialGooglePlus } from "react-icons/ti";
 const Footer = () => {
   return (
     <footer className=" p-5 lg:p-10 bg-base-200 text-base-content mt-16">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 footer">
+      <div className="max-w-7xl mx-auto mb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 footer">
+
         <nav>
           <h6 className="footer-title">Company</h6>
           <a className="link link-hover">About</a>
@@ -63,7 +64,14 @@ const Footer = () => {
             </div>
           </div>
         </nav>
+        
         <form>
+        <div className='mb-5'>
+          
+          <a className=" text-xl lg:text-2xl font-bold">
+              <span className="text-[#38b469]">Pottery</span> Palette
+            </a>
+          </div>
           <h6 className="footer-title">Subscribe to Our Newsletter</h6>
           <fieldset className="form-control w-80">
             <label className="label">
@@ -80,6 +88,8 @@ const Footer = () => {
           </fieldset>
         </form>
       </div>
+      <hr  />
+      <p className='opacity-60 text-center mt-8 text-xs'>&#169; Pottery Palette. All rights reserved.</p>
     </footer>
   );
 };

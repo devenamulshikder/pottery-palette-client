@@ -1,7 +1,7 @@
 const Faq = () => {
   return (
     <div className="flex flex-col md:flex-row lg:flex-row gap-5 mt-6 md:mt-10 lg:mt-16 p-4">
-      <div data-aos='fade-right' data-aos-duration='2000' className="flex flex-col flex-1">
+      <div  className="flex flex-col flex-1">
         <p className="font-semibold inter text-lg lg:text-xl mb-8 text-[#38b469]">FAQ</p>
         <h1 className="text-xl md:text-3xl lg:text-5xl font-bold inter mb-8">
           Frequently Asked Questions
@@ -16,7 +16,7 @@ const Faq = () => {
         />
       </div>
 
-      <div data-aos='fade-left'  data-aos-duration='2000' className="flex-1 space-y-2 md:mt-10 lg:mt-16 inter">
+      <div  className="flex-1 space-y-2 md:mt-10 lg:mt-16 inter">
         <div className="collapse collapse-arrow bg-base-200">
           <input type="radio" name="my-accordion-2" defaultChecked />
           <div className="collapse-title text-xl font-medium">

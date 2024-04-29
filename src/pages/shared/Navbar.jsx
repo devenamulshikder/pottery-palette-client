@@ -79,8 +79,8 @@ const Navbar = () => {
   );
 
   return (
-    <div>
-      <div className="navbar bg-base-100">
+    <div className='shadow-lg '>
+      <div className="navbar bg-base-100 mt-4 max-w-7xl mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -144,10 +144,10 @@ const Navbar = () => {
             </div>
           ) : (
             <div>
-              <Link className="mr-4" to="/login">
+              <Link className="mr-4 text-sm md:text-lg lg:text-lg" to="/login">
                 Login
               </Link>
-              <Link to="/register">Register</Link>
+              <Link className='mr-2 text-sm md:text-lg lg:text-lg' to="/register">Register</Link>
             </div>
           )}
         </div>

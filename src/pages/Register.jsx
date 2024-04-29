@@ -42,8 +42,6 @@ const Register = () => {
 
   return (
     <div
-      data-aos="fade-down"
-      data-aos-duration="1200"
       className="w-full max-w-md p-8 space-y-3 rounded-xl border-2 border-dotted bg-white   font-sans mx-auto my-5 lg:my-14"
     >
       <Helmet>

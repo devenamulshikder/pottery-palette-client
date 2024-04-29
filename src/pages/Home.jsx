@@ -4,6 +4,7 @@ import BestSeller from "../components/BestSeller";
 import FromOurBlog from "../components/FromOurBlog";
 import OurProducts from "../components/OurProducts";
 import Faq from "../components/Faq";
+import ArtAndCraftCategories from "../components/ArtAndCraftCategories";
 
 const Home = () => {
   const allData = useLoaderData();
@@ -28,7 +29,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-
+        <ArtAndCraftCategories></ArtAndCraftCategories>
         <BestSeller></BestSeller>
         <Faq></Faq>
         <FromOurBlog></FromOurBlog>
