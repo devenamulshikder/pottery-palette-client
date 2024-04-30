@@ -107,7 +107,7 @@ const Navbar = () => {
             </ul>
           </div>
           <a className="btn btn-ghost text-xl lg:text-2xl font-bold">
-            <span className="text-[#38b469]">Pottery</span> Palette
+            <span className="text-[#38b469]">Pottery</span> <span className='hidden md:flex lg:flex'>Palette</span>
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
