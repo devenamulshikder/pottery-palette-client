@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const ArtAndCraftCategories = () => {
   const [categoryData, setCategoryData] = useState([]);
@@ -18,23 +19,22 @@ const ArtAndCraftCategories = () => {
         Art & Craft Categories
       </h1>
 
-      <div className='flex flex-col md:flex-row md:flex-wrap lg:flex-row gap-10 justify-center items-center'>
+      <div className="flex flex-col md:flex-row md:flex-wrap lg:flex-row gap-10 justify-center items-center">
         {categoryData.map((category) => (
-          <div
-            key={category._id}
-            className="max-w-xs hover:scale-105 hover:shadow-2xl duration-300  p-6 rounded-md shadow-md bg-gray-900 dark:bg-gray-50 text-gray-50 dark:text-gray-900"
-          >
-            <img
-              src={category.image}
-              alt=""
-              className="object-cover object-center w-full rounded-md h-72 bg-gray-500 dark:bg-gray-500"
-            />
-            <div className="mt-6 mb-2">
-              <h2 className="text-xl font-semibold tracking-wide">
-                {category.subcategory_name}
-              </h2>
+          <Link key={category._id} to={`/challanging/${category.subcategory_name}`}>
+            <div className="max-w-xs hover:scale-105 hover:shadow-2xl duration-300  p-6 rounded-md shadow-md bg-gray-900 dark:bg-gray-50 text-gray-50 dark:text-gray-900">
+              <img
+                src={category.image}
+                alt=""
+                className="object-cover object-center w-full rounded-md h-72 bg-gray-500 dark:bg-gray-500"
+              />
+              <div className="mt-6 mb-2">
+                <h2 className="text-xl font-semibold tracking-wide">
+                  {category.subcategory_name}
+                </h2>
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

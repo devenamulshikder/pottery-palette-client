@@ -92,10 +92,10 @@ const MyArtCraftList = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 lg:mt-16 p-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  mt-8 lg:mt-16 p-4">
         {myCraft.map((item) => (
           <div key={item._id}>
-            <div className="card w-96 bg-base-100 shadow-xl">
+            <div className="card bg-base-100 shadow-xl">
               <figure>
                 <img
                   className="h-[250px] w-[350px] rounded-xl"

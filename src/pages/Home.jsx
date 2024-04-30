@@ -21,7 +21,7 @@ const Home = () => {
             The calming sensation of ceramics
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16 p-4 ">
-            {allData.slice(0, 6).map((singleData) => (
+            {allData.slice(0, 9).map((singleData) => (
               <OurProducts
                 key={singleData._id}
                 singleData={singleData}

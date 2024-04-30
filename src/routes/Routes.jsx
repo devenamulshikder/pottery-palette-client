@@ -10,6 +10,7 @@ import PrivetRout from "./PrivateRoute";
 import MyArtCraftList from "../pages/MyArtCraftList";
 import ViewDetails from "../components/ViewDetails";
 import UpdateCraft from "../components/UpdateCraft";
+import ArtAndCraftCategoriesDetails from "../components/ArtAndCraftCategoriesDetails";
 
 const router = createBrowserRouter([
   {
@@ -68,7 +69,18 @@ const router = createBrowserRouter([
             <UpdateCraft></UpdateCraft>
           </PrivetRout>
         ),
-        loader:({params})=>fetch(`http://localhost:5000/pottery/${params.id}`)
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/pottery/${params.id}`),
+      },
+      {
+        path: "/challanging/:subcategory_name",
+        element: (
+          <PrivetRout>
+            <ArtAndCraftCategoriesDetails></ArtAndCraftCategoriesDetails>
+          </PrivetRout>
+        ),
+        loader: ({ params }) =>
+          fetch(`http:/localhost:5000/challanging/${params.subcategory_name}`),
       },
     ],
   },

@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+import { FaRegStar } from "react-icons/fa";
 import { useLoaderData } from "react-router-dom";
 
 const ViewDetails = () => {
@@ -31,7 +32,7 @@ const ViewDetails = () => {
                         <p className="border-b-2 pb-2 border-dotted md:w-1/2">Category: {subcategory_name}</p>
                         <div className="md:w-1/2 flex justify-between items-center border-b-2 pb-2 border-dotted">
                             <p>Price: {price}</p>
-                            <p>Rating: {rating}</p>
+                            <p className='flex items-center gap-1'>Rating: {rating} <FaRegStar /></p>
                         </div>
                         <div className="md:w-1/2 flex justify-between items-center">
                             <p>Customizable: {customizable}</p>
