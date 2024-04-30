@@ -2,7 +2,7 @@
 
 # Live Link:
 
-- [Pottery Palette](https://assignment-9-real-estate-c65a0.web.app/)
+- [Pottery Palette](https://pallete-paradise.web.app/?)
 
 # Facilities of the Websites:
 

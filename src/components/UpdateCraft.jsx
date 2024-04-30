@@ -56,7 +56,7 @@ const UpdateCraft = () => {
       description,
     };
 
-    fetch(`http://localhost:5000/pottery/${_id}`, {
+    fetch(`https://pottery-palette.vercel.app/pottery/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

@@ -15,7 +15,7 @@ const MyArtCraftList = () => {
   const [myCraft, setMyCraft] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/myartcraftlist/${user.email}`)
+    fetch(`https://pottery-palette.vercel.app/myartcraftlist/${user.email}`)
       .then((res) => res.json())
       .then((data) => {
         setFilter(data);
@@ -34,7 +34,7 @@ const MyArtCraftList = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/pottery/${id}`, {
+        fetch(`https://pottery-palette.vercel.app/pottery/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

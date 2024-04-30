@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("http://localhost:5000/pottery"),
+        loader: () => fetch("https://pottery-palette.vercel.app/pottery"),
       },
       {
         path: "/login",
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
       {
         path: "/allart",
         element: <AllartAndCraft />,
-        loader: () => fetch("http://localhost:5000/pottery"),
+        loader: () => fetch("https://pottery-palette.vercel.app/pottery"),
       },
       {
         path: "/addcraft",
@@ -60,7 +60,7 @@ const router = createBrowserRouter([
           </PrivetRout>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/pottery/${params.id}`),
+          fetch(`https://pottery-palette.vercel.app/pottery/${params.id}`),
       },
       {
         path: "/updateCraft/:id",
@@ -70,7 +70,7 @@ const router = createBrowserRouter([
           </PrivetRout>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/pottery/${params.id}`),
+          fetch(`https://pottery-palette.vercel.app/pottery/${params.id}`),
       },
       {
         path: "/challanging/:subcategory_name",

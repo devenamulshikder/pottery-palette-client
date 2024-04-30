@@ -37,7 +37,7 @@ const AddCraftItem = () => {
       description
     };
 
-    fetch("http://localhost:5000/pottery", {
+    fetch("https://pottery-palette.vercel.app/pottery", {
       method: "POST",
       headers: {
         "content-type": "application/json",

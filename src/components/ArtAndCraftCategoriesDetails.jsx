@@ -8,7 +8,7 @@ const ArtAndCraftCategoriesDetails = () => {
 
   const { subcategory_name } = useParams();
   useEffect(() => {
-    fetch("http://localhost:5000/pottery")
+    fetch("https://pottery-palette.vercel.app/pottery")
       .then((res) => res.json())
       .then((data) => {
         setItems(data);

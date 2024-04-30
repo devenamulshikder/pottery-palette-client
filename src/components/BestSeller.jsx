@@ -63,7 +63,7 @@ const BestSeller = () => {
 
       <div className="">
         <div className="mt-16 bg-[url('https://i.postimg.cc/8C58zz5p/pngegg-e1662013227204.png')]">
-          <h1 className="text-xl font-semibold p-2 lg:text-5xl inter pt-16 lg:pl-16 w-[40rem]">
+          <h1 className="text-xl font-semibold p-2 lg:text-5xl inter pt-16 lg:pl-16 lg:w-[40rem]">
             Turning mud into something amazing
           </h1>
           <p className="lg:pl-16 inter lg:w-[40rem] mt-6 p-2">

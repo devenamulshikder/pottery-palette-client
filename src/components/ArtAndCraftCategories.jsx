@@ -7,7 +7,7 @@ const ArtAndCraftCategories = () => {
   const [categoryData, setCategoryData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/challanging")
+    fetch("https://pottery-palette.vercel.app/challanging")
       .then((res) => res.json())
       .then((data) => {
         setCategoryData(data);
