@@ -79,11 +79,11 @@ const AddCraftItem = () => {
               required
               className=" p-3 rounded-lg border w-full"
             >
-              <option>Clay-made pottery</option>
+              <option>Claymade pottery</option>
               <option>Stoneware</option>
               <option>Porcelain</option>
               <option>Terra Cotta</option>
-              <option>Ceramics & Architectural</option>
+              <option>Ceramics Architectural</option>
               <option>Home decor pottery</option>
             </select>
           </div>

@@ -1,8 +1,11 @@
+import { Zoom } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
 const OurProducts = ({ singleData }) => {
   return (
+    <>
+    <Zoom duration={2000}>
     <div className="hover:shadow-2xl">
       <div
         
@@ -29,6 +32,8 @@ const OurProducts = ({ singleData }) => {
         </div>
       </div>
     </div>
+    </Zoom>
+    </>
   );
 };
 

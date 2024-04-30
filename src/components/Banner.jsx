@@ -6,6 +6,8 @@ import { Pagination, Navigation } from "swiper/modules";
 
 import {} from "swiper/modules";
 import { Helmet } from "react-helmet-async";
+import { Typewriter } from "react-simple-typewriter";
+import { Fade,  } from "react-awesome-reveal";
 
 const Banner = () => {
   return (
@@ -27,21 +29,42 @@ const Banner = () => {
               <div className="mt-16">
                 <div className="flex flex-col mb-12 overflow-hidden text-gray-700 bg-white shadow-md  bg-clip-border">
                   <div className="absolute h-[38rem] w-full">
-                    <img
+                  <Fade duration={1000}>
+                  <img
                       alt="nature"
                       className="h-[38rem] w-full object-cover object-center opacity-80"
                       src="https://i.postimg.cc/RFfW4HQj/8-ldgq801ce.jpg"
                     />
+                  </Fade>
                   </div>
                 </div>
-                <div
-                  className=" relative "
-                >
+                <div className=" relative ">
                   <h2 className="text-4xl lg:text-6xl ml-10 font-bold inter text-white text-center mt-32">
-                    Every Touch Has Its <br /> Own Feelings
+                    <Fade duration={3000}>
+                      
+                      <p>
+                        Every Touch Has Its <br /> Own Feelings
+                      </p>
+                    </Fade>
                   </h2>
                   <p className="text-xl lg:text-3xl mt-8 inter text-white text-center ml-10">
-                    Welcome This Season with Our Sites!
+                    <span style={{ color: "#38b469", fontWeight: "bold" }}>
+                      {/* Style will be inherited from the parent element */}
+                      <Typewriter
+                        words={[
+                          "Welcome",
+                          "This",
+                          "Season ",
+                          "with Our Sites!",
+                        ]}
+                        loop={5}
+                        cursor
+                        cursorStyle="_"
+                        typeSpeed={70}
+                        deleteSpeed={50}
+                        delaySpeed={1000}
+                      />
+                    </span>
                   </p>
                 </div>
               </div>
@@ -61,14 +84,28 @@ const Banner = () => {
                     />
                   </div>
                 </div>
-                <div
-                  className=" relative "
-                >
+                <div className=" relative ">
                   <h2 className="text-4xl lg:text-6xl ml-10 font-bold inter text-white text-center mt-32">
                     Every Touch Has Its <br /> Own Feelings
                   </h2>
                   <p className="text-xl lg:text-3xl mt-8 inter text-white text-center ml-10">
-                    Welcome This Season with Our Sites!
+                    <span style={{ color: "#38b469", fontWeight: "bold" }}>
+                      {/* Style will be inherited from the parent element */}
+                      <Typewriter
+                        words={[
+                          "Welcome",
+                          "This",
+                          "Season ",
+                          "with Our Sites!",
+                        ]}
+                        loop={5}
+                        cursor
+                        cursorStyle="_"
+                        typeSpeed={70}
+                        deleteSpeed={50}
+                        delaySpeed={1000}
+                      />
+                    </span>
                   </p>
                 </div>
               </div>
@@ -88,14 +125,28 @@ const Banner = () => {
                     />
                   </div>
                 </div>
-                <div
-                  className=" relative "
-                >
+                <div className=" relative ">
                   <h2 className="text-4xl md:text-5xl lg:text-6xl ml-10 font-bold inter text-white text-center mt-32">
                     Every Touch Has Its <br /> Own Feelings
                   </h2>
                   <p className="text-xl lg:text-3xl mt-8 inter text-white text-center ml-10">
-                    Welcome This Season with Our Sites!
+                    <span style={{ color: "#38b469", fontWeight: "bold" }}>
+                      {/* Style will be inherited from the parent element */}
+                      <Typewriter
+                        words={[
+                          "Welcome",
+                          "This",
+                          "Season ",
+                          "with Our Sites!",
+                        ]}
+                        loop={5}
+                        cursor
+                        cursorStyle="_"
+                        typeSpeed={70}
+                        deleteSpeed={50}
+                        delaySpeed={1000}
+                      />
+                    </span>
                   </p>
                 </div>
               </div>
