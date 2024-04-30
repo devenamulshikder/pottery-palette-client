@@ -80,7 +80,7 @@ const router = createBrowserRouter([
           </PrivetRout>
         ),
         loader: ({ params }) =>
-          fetch(`http:/localhost:5000/challanging/${params.subcategory_name}`),
+          fetch(`https://pottery-palette.vercel.app/challanging/${params.subcategory_name}`),
       },
     ],
   },
